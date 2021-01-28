@@ -5,16 +5,7 @@ let port = process.env.PORT || 3000
 
 // makes public folder url path
 app.use(express.static("public"))
-// client -> Send data to the server  {
-//     note:"title",
-//     text:"this is A body"
-// }  ->  from  port the client data looks like: ksdjfhdskjhfsdkjhfkjdshfkjhskjfhdsklhfkhldslkfhdslkh
 
-
-// client data comes to the server-> ksdjfhdskjhfsdkjhfkjdshfkjhskjfhdsklhfkhldslkfhdslkh -> converts to original format {
-//     note:"title",
-// //     text:"this is A body"
-// }
 //data parsing - decrypting
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
