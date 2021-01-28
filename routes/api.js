@@ -24,6 +24,7 @@ router.post("/api/notes", function (req, res) {
 
 //  router delete
 router.delete("/api/notes/:id", function (req, res) {
+
     let idToDelete = req.params.id
     for (var i = 0; i < db.length; i++) {
         if (idToDelete == db[i].id) {
