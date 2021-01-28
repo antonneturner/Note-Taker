@@ -1,3 +1,4 @@
+// router creation
 let router = require("express").Router()
 let db = require("../db/db.json")
 let fs = require("fs")
@@ -7,7 +8,7 @@ router.get("/api/notes", function (req, res) {
     res.json(db)
 
 })
-
+//  post router
 let id = 1
 router.post("/api/notes", function (req, res) {
 
@@ -20,6 +21,8 @@ router.post("/api/notes", function (req, res) {
     })
 
 })
+
+//  router delete
 router.delete("/api/notes/:id", function (req, res) {
     let idToDelete = req.params.id
     for (var i = 0; i < db.length; i++) {
