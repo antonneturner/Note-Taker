@@ -8,23 +8,38 @@ router.get("/api/notes", function (req, res) {
 
 })
 
-
+let id = 1
 router.post("/api/notes", function (req, res) {
 
     let notesData = req.body
-
+    notesData.id = id
+    id++;
     db.push(notesData)
     fs.writeFile("./db/db.json", JSON.stringify(db), function () {
         res.json(db)
     })
 
-    router.delete("/api/notes", function (req, res) {
+})
+router.delete("/api/notes/:id", function (req, res) {
+    let idToDelete = req.params.id
+    for (var i = 0; i < db.length; i++) {
+        if (idToDelete == db[i].id) {
+            db.splice(i, 1)
 
-        let notesData = req.body
-
-        db
-
-    })
+            fs.writeFile("./db/db.json", JSON.stringify(db), function () {
+                res.json(db)
+            })
 
 
-    module.exports = router
+        }
+
+    }
+
+
+
+
+    db
+
+})
+
+module.exports = router
