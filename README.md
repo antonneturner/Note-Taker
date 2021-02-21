@@ -14,7 +14,7 @@ It has also strengthend my skills as a developer and has given me more confidenc
 
 - An application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
-# Technologies
+## Technologies
 
 - Express
 - Javascript
@@ -29,4 +29,4 @@ https://note-takeranton.herokuapp.com/
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/71462708/108619449-f1be6a00-73f2-11eb-9336-221c63939164.png)
+![image](https://user-images.githubusercontent.com/71462708/108620458-58935180-73fa-11eb-96a1-82125011421e.png)
