@@ -30,3 +30,7 @@ https://note-takeranton.herokuapp.com/
 ## Screenshot
 
 ![image](https://user-images.githubusercontent.com/71462708/108620458-58935180-73fa-11eb-96a1-82125011421e.png)
+
+## License
+
+This project is licensed under MIT license- see LICENSE file for details.
